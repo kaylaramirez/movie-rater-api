@@ -5,9 +5,9 @@ from api.serializers import MovieSerializer, RatingSerializer
 
 class MovieViewSet(viewsets.ModelViewSet):
     queryset = Movie.objects.all()
-    serializer_class = (MovieSerializer,)
+    serializer_class = MovieSerializer
 
 
 class RatingViewSet(viewsets.ModelViewSet):
     queryset = Rating.objects.all()
-    serializer_class = (RatingSerializer,)
+    serializer_class = RatingSerializer
